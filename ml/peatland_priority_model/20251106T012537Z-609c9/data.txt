@@ -1,0 +1,17 @@
+file: peatland_priority_model.rds
+file_size: 327357
+pin_hash: 609c926402e22651
+type: rds
+title: 'peatland_priority_model: a pinned list'
+description: A ranger classification modeling workflow
+tags: ~
+urls: ~
+created: 20251106T012537Z
+api_version: 1
+user:
+  required_pkgs:
+  - parsnip
+  - ranger
+  - recipes
+  - workflows
+  renv_lock: ~

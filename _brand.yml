@@ -1,0 +1,66 @@
+meta:
+  name: MoorCare Conservation
+  link: https://www.moorcareconservation.example
+
+color:
+  palette:
+    forest-green: "#2D5016"
+    peat-brown: "#5C4033"
+    moss-green: "#6B8E23"
+    sky-blue: "#4A90E2"
+    earth-orange: "#D2691E"
+    water-teal: "#20B2AA"
+    stone-gray: "#708090"
+    white: "#FFFFFF"
+    black: "#1A1A1A"
+
+  foreground: "#1A1A1A"
+  background: "#FFFFFF"
+  primary: "#2D5016"
+  secondary: "#5C4033"
+  success: "#6B8E23"
+  info: "#4A90E2"
+  warning: "#D2691E"
+  danger: "#8B4513"
+  light: "#F5F5F5"
+  dark: "#1A1A1A"
+
+typography:
+  fonts:
+    - family: Lato
+      source: google
+      weight: [300, 400, 700]
+      style: [normal, italic]
+    - family: Merriweather
+      source: google
+      weight: [400, 700]
+      style: [normal, italic]
+    - family: Fira Code
+      source: google
+      weight: [400, 500]
+      style: normal
+
+  base:
+    family: Lato
+    weight: 400
+    size: 16px
+    line-height: 1.6
+
+  headings:
+    family: Merriweather
+    weight: 700
+    line-height: 1.3
+    color: "#2D5016"
+
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+
+  monospace-inline:
+    color: "#5C4033"
+    background-color: "#F5F5F5"
+
+  link:
+    color: "#2D5016"
+    weight: 600
