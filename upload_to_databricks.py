@@ -25,13 +25,26 @@ def main():
     # Uses credentials from environment or .databrickscfg
     w = WorkspaceClient()
 
+    # Get configuration from WorkspaceClient
+    config = w.config
+
+    # Try to get SQL warehouse HTTP path from environment, otherwise use a default
+    http_path = os.getenv("DATABRICKS_HTTP_PATH")
+    if not http_path:
+        print("⚠️  DATABRICKS_HTTP_PATH not set. Please set it to your SQL warehouse HTTP path.")
+        print("   Example: /sql/1.0/warehouses/abc123def456")
+        return
+
     print("Uploading data to Databricks...")
+    print(f"  Workspace: {config.host}")
+    print(f"  HTTP Path: {http_path}")
 
     # Create schema and volume if they don't exist
-    print(f"Creating schema {CATALOG}.{SCHEMA} if not exists...")
+    print(f"\nCreating schema {CATALOG}.{SCHEMA} if not exists...")
     connection = sql.connect(
-        server_hostname=os.getenv("DATABRICKS_SERVER_HOSTNAME"),
-        http_path=os.getenv("DATABRICKS_HTTP_PATH")
+        server_hostname=config.host,
+        http_path=http_path,
+        credentials_provider=lambda: config
     )
 
     cursor = connection.cursor()
