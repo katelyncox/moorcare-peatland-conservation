@@ -59,9 +59,9 @@ restoration_projects <- read_csv("data/synthetic-restoration-projects.csv", show
 # con <- dbConnect(
 #   odbc::databricks()
 # )
-# peatland_sites <- tbl(con, in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_peatland_sites"))
-# monitoring_data <- tbl(con, in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_monitoring_data"))
-# restoration_projects <- tbl(con, in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_restoration_projects"))
+# peatland_sites <- tbl(con, in_catalog("demos", "moorcare", "synthetic_peatland_sites"))
+# monitoring_data <- tbl(con, in_catalog("demos", "moorcare", "synthetic_monitoring_data"))
+# restoration_projects <- tbl(con, in_catalog("demos", "moorcare", "synthetic_restoration_projects"))
 
 theme_set(theme_minimal(base_size = 12))
 ```

@@ -156,7 +156,7 @@ This project includes scripts for loading data into Databricks with row-level se
    python upload_to_databricks.py
    ```
 
-This creates tables in the `sol_eng_demo_nickp.moorcare` schema with row-level security applied.
+This creates tables in the `demos.moorcare` schema with row-level security applied.
 
 ### Using Databricks Data
 
@@ -165,7 +165,7 @@ Update the analysis scripts to connect to Databricks:
 **In R (eda.qmd or app.R)**:
 ```r
 con <- dbConnect(odbc::databricks())
-peatland_sites <- tbl(con, in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_peatland_sites"))
+peatland_sites <- tbl(con, in_catalog("demos", "moorcare", "synthetic_peatland_sites"))
 ```
 
 ## Custom Branding

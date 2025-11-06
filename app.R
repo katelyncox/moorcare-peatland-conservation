@@ -196,9 +196,9 @@ server <- function(input, output, session) {
   # })
 
   # To use Databricks data, uncomment these lines:
-  # peatland_sites <- tbl(pool_con(), in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_peatland_sites"))
-  # monitoring_data <- tbl(pool_con(), in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_monitoring_data"))
-  # restoration_projects <- tbl(pool_con(), in_catalog("sol_eng_demo_nickp", "moorcare", "synthetic_restoration_projects"))
+  # peatland_sites <- tbl(pool_con(), in_catalog("demos", "moorcare", "synthetic_peatland_sites"))
+  # monitoring_data <- tbl(pool_con(), in_catalog("demos", "moorcare", "synthetic_monitoring_data"))
+  # restoration_projects <- tbl(pool_con(), in_catalog("demos", "moorcare", "synthetic_restoration_projects"))
 
   # Filtered data for site explorer
   filtered_sites <- reactive({

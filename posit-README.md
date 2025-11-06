@@ -172,7 +172,7 @@ source("data/generate_data.R")
 
 **Highlight**:
 - Data uploaded to Databricks volumes
-- Tables created in `sol_eng_demo_nickp.moorcare` schema
+- Tables created in `demos.moorcare` schema
 - Row access policy limits `demo_databricks_user@posit.co` to Scotland only
 - Both R and Python can connect via ODBC
 

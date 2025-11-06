@@ -10,7 +10,8 @@ import os
 import glob
 
 # Configuration
-CATALOG = "sol_eng_demo_nickp"
+# Workspace: posit-default-workspace (rstudio-partner-posit-default.cloud.databricks.com)
+CATALOG = "demos"
 SCHEMA = "moorcare"
 VOLUME = "data_files"
 DATA_DIR = "data"
