@@ -9,6 +9,12 @@ library(stringr)
 
 set.seed(42)
 
+# Create data directory if it doesn't exist
+if (!dir.exists("data")) {
+  dir.create("data", recursive = TRUE)
+  cat("Created data/ directory\n")
+}
+
 # Number of peatland sites to generate
 n_sites <- 500
 
